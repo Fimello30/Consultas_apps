@@ -1,0 +1,1 @@
+<input type="text" class="form-control" name="name" placeholder="Informe o domínio" required>
