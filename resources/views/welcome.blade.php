@@ -20,6 +20,7 @@
             <form class="form-signin" method="post" action="{{ route('consulta') }}">
                 {{ csrf_field() }}
                 @include('consulta._form')
+                
                 <br><br>
                 
                 <div>
