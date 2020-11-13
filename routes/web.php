@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/erro', function () {
+    return view('erro.index');
+});
+
 Route::post('/','App\Http\controllers\ListaController@index');
 
 Route::get('/consulta', function () {

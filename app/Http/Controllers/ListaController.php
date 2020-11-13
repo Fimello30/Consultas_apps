@@ -24,6 +24,9 @@ class ListaController extends Controller
 
         try {
             $Client = Client::where('domain', $Dominio)->get();
+            if($Client->isEmpty()){
+                return view('erro.index',compact('Dominio'));
+            }
             $Billing = Billing::where('client_id',$Client[0]['id'])->get();
             $Clients_channel = Clients_channel::where('id_client', $Client[0]['id'])->get();
             $Clients_message = Clients_message::where('domain', $Dominio)->get();
