@@ -17,13 +17,13 @@
         <div class="form-signin">
             
             <h2>Consultas Apps Br24</h2><br>
-            <form class="form-signin" method="post" action="consulta">
+            <form class="form-signin" method="post" action="{{ route('consulta') }}">
                 {{ csrf_field() }}
                 @include('consulta._form')
                 <br><br>
                 
                 <div>
-                    <input type="submit" name="btnCadUsuario" value="Consultar" class="btn btn-primary">
+                    <button  class="btn btn-primary">Consultar</button>
                 </div>
         </div>
 @endsection
