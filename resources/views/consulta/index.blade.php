@@ -94,7 +94,7 @@
             </div>
         
             <div>
-                <a class="btn btn-primary" href="consultas_apps/public/" role="button">Voltar</a>
+                <a class="btn btn-primary" href="/" role="button">Voltar</a>
             </div>
         </div>
 @endsection
