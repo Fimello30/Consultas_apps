@@ -17,7 +17,7 @@
         <div class="form-signin">
             
             <h2>Consultas Apps Br24</h2><br>
-            <form class="form-signin" method="post" action="consultas_apps/public/consulta">
+            <form class="form-signin" method="post" action="consulta">
                 {{ csrf_field() }}
                 @include('consulta._form')
                 <br><br>
