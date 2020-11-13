@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('welcome');
+});
 
 
-Route::post('/consulta',['as'=>'consulta','uses'=>'App\Http\controllers\ListaController@index']);
+Route::post('/consulta',['as'=>'consulta','uses'=>'App\Http\Controllers\ListaController@index']);
