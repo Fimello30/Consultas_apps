@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Route::post('/','App\Http\controllers\ListaController@index');
 
+Route::get('/consulta','App\Http\controllers\ListaController@index');
+
 Route::get('/consulta', function () {
     return view('consulta.index');
 })->name('consulta');
