@@ -22,7 +22,7 @@
             <h2>Consultas Apps Br24</h2>
         </div>
         <div class="alert alert-danger" role="alert">
-            Domínio: <br> {{ $Dominio }} <br> não encontrado 
+            Domínio: <br> {{ $Dominio ?? ''}} <br> não encontrado 
         </div>
 
         <div>
