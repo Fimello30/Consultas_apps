@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/consultas_apps/public/', function () {
     return view('welcome');
 });
 
 
-Route::post('/consulta', 'App\Http\controllers\ListaController@index',function () {
+Route::post('/consultas_apps/public/consulta', 'App\Http\controllers\ListaController@index',function () {
     return view('consulta.index');
 })->name('consulta');
