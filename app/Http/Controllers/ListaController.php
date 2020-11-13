@@ -23,16 +23,16 @@ class ListaController extends Controller
         $Clients_message = Clients_message::all();
 
         try {
-        $Client = Client::where('domain', $Dominio)->get();
-        $Billing = Billing::where('client_id',$Client[0]['id'])->get();
-        $Clients_channel = Clients_channel::where('id_client', $Client[0]['id'])->get();
-        $Clients_message = Clients_message::where('domain', $Dominio)->get();
-        
+            $Client = Client::where('domain', $Dominio)->get();
+            $Billing = Billing::where('client_id',$Client[0]['id'])->get();
+            $Clients_channel = Clients_channel::where('id_client', $Client[0]['id'])->get();
+            $Clients_message = Clients_message::where('domain', $Dominio)->get();
+            
 
-        $Total_message_mes = ListaController::getMessageCount($request);
-        $Data_Inicio_Trial = new Carbon($Billing[0]['begin_at']);
-        $Data_Inicio = $Data_Inicio_Trial->format('d-m-Y');
-        $Data_Final = $Data_Inicio_Trial->addDays(14)->format('d-m-Y');
+            $Total_message_mes = ListaController::getMessageCount($request);
+            $Data_Inicio_Trial = new Carbon($Billing[0]['begin_at']);
+            $Data_Inicio = $Data_Inicio_Trial->format('d-m-Y');
+            $Data_Final = $Data_Inicio_Trial->addDays(14)->format('d-m-Y');
         } catch (Exception $e) {
             Log::error($e);
         }

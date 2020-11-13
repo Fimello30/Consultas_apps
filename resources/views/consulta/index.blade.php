@@ -23,7 +23,7 @@
                 <table class="table" >
                     <thead class="thead-dark">
                     <tr class="text-center">
-                        <th>Periodo de Trial do Cliente: {{ $Dominio ?? 'dominio não encontrado' }}</th>
+                        <th>Periodo de Trial do Cliente: {{ $Dominio ?? '' }}</th>
                     </tr>
 
                     <tr class="text-center"> 
