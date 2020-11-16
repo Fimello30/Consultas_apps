@@ -16,11 +16,7 @@ class ListaController extends Controller
 {
     public function index(Request $request)
     {   
-        $Dominio = $request['dominio'];   
-        $Client = Client::all();
-        $Billing = Billing::all();
-        $Clients_channel = Clients_channel::all();
-        $Clients_message = Clients_message::all();
+        $Dominio = $request['dominio'];
 
         try {
             $Client = Client::where('domain', $Dominio)->get();
