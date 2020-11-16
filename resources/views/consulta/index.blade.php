@@ -94,7 +94,7 @@
             </div>
         
             <div>
-                <a class="btn btn-primary" href="{{ url('') }}" role="button">Voltar</a>
+                <a class="btn btn-primary" href="{{ url('home') }}" role="button">Voltar</a>
             </div>
         </div>
 @endsection
